@@ -144,9 +144,9 @@ app.get('/updates.json', (req, res) => {
 });
 
 app.get('/updates/:version/:file', (req, res) => {  
-	const { version, file } = req.body;
+	const { version, file } = req.params;
 
-	console.log(req.body);
+	console.log(req.params);
 
 	/* Just send the file */
 	res.download(path.join(__dirname, `${ version }/`,file));
