@@ -149,5 +149,5 @@ app.get('/updates/:version/:file', (req, res) => {
 	console.log(req.params);
 
 	/* Just send the file */
-	res.download(path.join(__dirname, `${ version }/`,file));
+	res.download(path.join(__dirname, `updates/${ version }/`,file));
 });
