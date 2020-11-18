@@ -141,4 +141,11 @@ http.listen(port, function(){
 app.get('/updates.json', (req, res) => {  
 	/* Just send the file */
 	res.sendFile(path.join(__dirname, 'updates.json'));
-  });
+});
+
+app.get('/updates/:version/:file', (req, res) => {  
+	const { version, file } = req.body;
+	
+	/* Just send the file */
+	res.download(path.join(__dirname, `${ version }/`,file));
+});
