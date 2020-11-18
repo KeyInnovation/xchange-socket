@@ -1,0 +1,8 @@
+{
+  "win32-x64-prod": {
+    "readme": "Fix de tipo de cambio para premium.",
+    "update": 	"https://xchangemx.support/appUpdates/1.4.9/",
+    "install": 	"https://xchangemx.support/appUpdates/1.4.9/XChangeSetup.exe",
+    "version": "1.4.9"
+  }
+}
