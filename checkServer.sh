@@ -1,8 +1,8 @@
 #!/bin/sh
  
-PROCESS_COUNT=$(ps -fu root | grep server.js | grep -v grep | wc -l)
+PROCESS_COUNT=$(ps -fu xchmxsupport | grep xchange-socket.js | grep -v grep | wc -l)
 case $PROCESS_COUNT in
-0) forever start /home/xchangeback/public_html/InventarioServer/server.js
+0) forever start /home/xchmxsupport/xchange-socket/xchange-socket.js
 ;;
 1) #OK, program is already running once
 ;;

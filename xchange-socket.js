@@ -11,9 +11,9 @@ app.get('/', function(req, res){
 
 var con = mysql.createConnection({
   host: "localhost",
-  user: "xchangeb_backend",
-  password: "Xchange123#",
-  database: "xchangeb_xchange"
+  user: "xchmxsup_xchange",
+  password: "KeyFirm123!",
+  database: "xchmxsup_xchange"
 });
 
 // var con = mysql.createConnection({
