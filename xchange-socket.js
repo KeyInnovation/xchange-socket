@@ -133,11 +133,11 @@ var sendReservacion = (socket) => {
 	}
 };
 
-function time() {
-    let timestamp = Math.floor(new Date().getTime() / 1000)
-    return timestamp;
-}
-
 http.listen(port, function(){
   console.log('listening on *:' + port)
 });
+
+app.get('/updates.json', (req, res) => {  
+	/* Just send the file */
+	res.sendFile(path.join(__dirname, 'updates.json'));
+  });
