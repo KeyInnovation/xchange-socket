@@ -51,7 +51,7 @@ io.on('connection', function(socket) {
 	});
 	
 	socket.on('updateTasas', () => {
-		socket.emit('updateTasas');
+		socket.broadcast.emit('updateTasas');
 	});
 });
 
