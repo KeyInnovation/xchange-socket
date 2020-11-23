@@ -48,7 +48,11 @@ io.on('connection', function(socket) {
 
     socket.on('disconnect', function(){
         console.log('user disconnected')
-    });
+	});
+	
+	socket.on('updateTasas', () => {
+		socket.emit('updateTasas');
+	});
 });
 
 var actualizarSolicitudes = (socket = null) => {
